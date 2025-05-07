@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Homebutton from "./components/Homebutton";
+import Notice from "./components/Notice";
 
 
 export const metadata: Metadata = {
@@ -24,6 +26,8 @@ export default function RootLayout({
 
       >
         <Navbar/>
+        <Homebutton/>
+        <Notice/>
         <div className="w-full md:w-[80%] mx-auto">
           {children}
         </div>
